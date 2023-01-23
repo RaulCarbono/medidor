@@ -1,0 +1,57 @@
+{
+    "datos" : [ {
+        "serial_Medidor":"22551862" 
+    },
+    {
+        "input_reg_R" : [{
+            "volts_L1": "122.352783203125",
+            "volts_L2": "122.387451171875",
+            "volts_L3": "120.89892578125",
+            "curren_L1": "0",
+            "curren_L2": "0",
+            "curren_L3": "0",
+            "PA_L1": "0",
+            "PA_L2": "0",
+            "PA_L3": "0",
+            "apparent_PL1": "0",
+            "apparent_PL2": "0",
+            "apparent_PL3": "0",
+            "PR_L1": "0",
+            "PR_L2": "0",
+            "PR_L3": "0",
+            "FP_L1": "0",
+            "FP_L2": "0",
+            "FP_L3": "0",
+            "avera_line_current": "0",
+            "sum_line_currents": "0",
+            "total_Sys_Power": "0",
+            "total_sys_VA": "0",
+            "total_sys_VAr": "0",
+            "total_FP": "0",
+            "FHz": "58.9794921875",
+            "total_kWh": "0",
+            "total_kVArh": "0",
+            "total_export_kWh": "0",
+            "Total_Import_kVArh": "0",
+            "total_VAh": "0",
+            "Ah": "0",
+            "Neutral_current": "0",
+            "Volts_L1_L2": "212.11639404296875",
+            "volts_L2_L3": "210.5465545654297",
+            "volts_L3_L1": "212.54395294189453",
+            "avera_volts_lVsl": "212.0689697265625",
+            "Phase_1_L_N_volts_THD": "2.774999976158142",
+            "Phase_2_L_N_volts_THD": "2.6799999475479126",
+            "Phase_3_L_N_volts_THD": "4.005000114440918",
+            "Phase_1_Current_THD": "0",
+            "Phase2_Current_THD": "0",
+            "Phase_3_Current_THD": "0",
+            "Average_line_to_neutral_volts_THD": "0",
+            "Average_line_current_THD": "2.528333306312561"
+    }]
+    }, 
+    {
+        "fecha": "2023-01-23T20:00:10.117Z"
+    } 
+]
+}
