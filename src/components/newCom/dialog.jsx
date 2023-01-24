@@ -7,6 +7,7 @@ import DialogContentText from "@mui/material/DialogContentText";
 import DialogTitle from "@mui/material/DialogTitle";
 import IconButton from "@mui/material/IconButton";
 import VisibilityIcon from "@mui/icons-material/Visibility";
+import Tooltip from '@mui/material/Tooltip';
 
 //COMPONENT
 import datas from "../../utils/prueba.json";
@@ -36,6 +37,7 @@ export default function ScrollDialog() {
 
   return (
     <div>
+       <Tooltip title="Show Logs" arrow>
       <IconButton
         aria-label="play/pause"
          onClick={handleClickOpen(
@@ -44,6 +46,7 @@ export default function ScrollDialog() {
       >
         <VisibilityIcon sx={{ height: 38, width: 38 }} />
       </IconButton>
+      </Tooltip>
       <Dialog
         open={open}
         onClose={handleClose}
