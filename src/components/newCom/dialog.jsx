@@ -42,7 +42,7 @@ export default function ScrollDialog() {
         aria-label="play/pause"
          onClick={handleClickOpen(
           "paper"
-        )} /* onClick={()=>console.log(datas.datos[3].fecha)} */
+        )} 
       >
         <VisibilityIcon sx={{ height: 38, width: 38 }} />
       </IconButton>
@@ -157,10 +157,6 @@ export default function ScrollDialog() {
             </p>
           </DialogContentText>
         </DialogContent>
-        {/* <DialogActions>
-          <Button onClick={handleClose}>Cancel</Button>
-          <Button onClick={handleClose}>Subscribe</Button>
-        </DialogActions> */}
       </Dialog>
     </div>
   );
