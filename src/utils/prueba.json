@@ -3,6 +3,9 @@
         "serial_Medidor":"22551862" 
     },
     {
+        "name_pro":"Hotel Astor" 
+    },
+    {
         "input_reg_R" : [{
             "volts_L1": "122.352783203125",
             "volts_L2": "122.387451171875",

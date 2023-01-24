@@ -21,6 +21,9 @@ import MailIcon from "@mui/icons-material/Mail";
 import ElectricMeterIcon from "@mui/icons-material/ElectricMeter";
 import GasMeterIcon from "@mui/icons-material/GasMeter";
 
+//COMPONENT
+import MacroMeter from "./macroMeter";
+
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
@@ -105,7 +108,7 @@ export default function MiniDrawer() {
       <CssBaseline />
       <AppBar position="fixed" open={open} sx={{ backgroundColor: "white" }}>
         <Toolbar>
-          <IconButton
+          {/* <IconButton
             color="success"
             aria-label="open drawer"
             onClick={handleDrawerOpen}
@@ -116,15 +119,31 @@ export default function MiniDrawer() {
             }}
           >
             <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" noWrap component="div" color="black">
+          </IconButton> */}
+          <Typography
+            variant="h6"
+            noWrap
+            component="div"
+            color="black"
+            sx={{ marginLeft: 5 }}
+          >
             Logs counter for Horus Smart Energy meters
           </Typography>
         </Toolbar>
       </AppBar>
-      <div onMouseOverCapture={handleDrawerOpen} onMouseLeave={handleDrawerClose} >
+      <div
+        onMouseOverCapture={handleDrawerOpen}
+        onMouseLeave={handleDrawerClose}
+      >
         <Drawer variant="permanent" open={open}>
           <DrawerHeader>
+            <img
+              src={`https://res.cloudinary.com/rawwshak/image/upload/v1659678238/hse_qhhlue.png`}
+              srcSet={"`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`"}
+              alt={"item.title"}
+              loading="lazy"
+              sizes="auto"
+            />
             {/* <IconButton onClick={handleDrawerClose}>
               {theme.direction === "rtl" ? (
                 <ChevronRightIcon />
@@ -187,7 +206,12 @@ export default function MiniDrawer() {
       </div>
       <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
         <DrawerHeader />
-        <Typography paragraph>
+        <div style={{ marginTop: "10px" }}>
+          {" "}
+          <MacroMeter />
+        </div>
+
+        {/* <Typography paragraph>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Rhoncus
           dolor purus non enim praesent elementum facilisis leo vel. Risus at
@@ -215,7 +239,7 @@ export default function MiniDrawer() {
           sollicitudin nibh sit. Ornare aenean euismod elementum nisi quis
           eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
           posuere sollicitudin aliquam ultrices sagittis orci a.
-        </Typography>
+        </Typography> */}
       </Box>
     </Box>
   );
